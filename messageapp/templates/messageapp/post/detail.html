@@ -1,0 +1,9 @@
+{% extends 'messageapp/base.html' %}
+{% block content %}
+
+<h2>{{post.title}}</h2>
+<p>
+  Date send {{post.date_send}} by {{post.author}}
+</p>
+{{post.body|linebreaks}}
+{% endblock %}
